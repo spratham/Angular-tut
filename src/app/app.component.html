@@ -1,6 +1,68 @@
-<h1 class="{{title}}">Hello Angular {{title}}</h1>
-<h2>{{data}} <br> {{getValue()}}</h2>
+<h1 class="{{ title }}">{{ title }} In Angular</h1>
+<!-- <h2>{{data}} <br> {{getValue()}}</h2> -->
 <!-- <app-login></app-login>  -->
-<app-user-list></app-user-list>
+<!-- <app-user-list></app-user-list>
 <app-sign-in></app-sign-in>
-<app-sign-up></app-sign-up>
+<app-sign-up></app-sign-up> -->
+<!-- <button (click)="getName('pratham',123)"> Click me</button> -->
+<!-- <br />
+<br /> -->
+<!-- 
+<input type="text" #box (blur)="getData(box.value)" placeholder="Event keyup" />
+<input
+  type="text"
+  #box2
+  (keydown)="getData(box2.value)"
+  placeholder="Event keydown"
+/>
+
+<h1 (mouseover)="getData('over')">Pratham Singh</h1> -->
+
+<!-- <input 
+type="text" 
+#box
+placeholder="Name here"  
+name="name"/>
+
+<button (click)="getValue(box.value)">Click me</button>
+
+<p>look here- {{displayVal}}</p> -->
+
+<!-- <h2>Counter App</h2>
+
+<button (click)="counter('plus')">++</button>
+<p>{{count}}</p>
+<button (click)="counter('minus')">- -</button> -->
+
+<!-- <h1>If else</h1>
+
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+
+<ng-template #ifBlock>
+  <p style="color:blue">If condition {{show}}</p>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>Else condition {{show}}</h1>
+</ng-template>
+
+<button (click)="show = !show">click me</button> -->
+
+<!-- 
+<div [ngSwitch]="color">
+<h1 *ngSwitchCase="'red' ||'RED" style="color:red;">Red Color</h1>
+<h1 *ngSwitchCase="'blue'" style="color:Blue;">Blue Color</h1>
+<h1 *ngSwitchCase="'green'"style="color:green;">green Color</h1>
+// Dafualt Case
+<h1 *ngSwitchDefault>Unknown color</h1>          
+
+</div> -->
+
+<!-- <h3 *ngFor="let items of users">{{ items }}</h3> -->
+
+<ul *ngFor="let item of userDetails">
+  <li>Name is: {{ item.name }}</li>
+  <ul *ngFor="let account of item.social">
+    <li >{{account}}</li>
+  </ul>
+</ul>
