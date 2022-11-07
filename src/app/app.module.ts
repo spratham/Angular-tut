@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { SignUpComponent } from './user-auth/sign-up/sign-up.component';
 import { SignInComponent } from './user-auth/sign-in/sign-in.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { SignInComponent } from './user-auth/sign-in/sign-in.component';
     SignInComponent,
     SignUpComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
