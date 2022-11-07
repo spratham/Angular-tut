@@ -1,13 +1,7 @@
 <h1 class="{{ title }}">{{ title }} In Angular</h1>
 
 <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
-  <input
-    type="text"
-    ngModel
-    name="username"
-    #box
-    placeholder="Enter The Name"
-  />
+  <input type="text" ngModel name="username" placeholder="Enter The Name" />
   <input type="tel" ngModel name="Phone" placeholder="Enter The PhNo." />
   <input type="email" ngModel name="Email" placeholder="Enter The Email" />
   <button>Register</button>
@@ -17,4 +11,3 @@
   <li>{{ print.Phone }}</li>
   <li>{{ print.Email }}</li>
 </ul>
-
