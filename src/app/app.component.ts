@@ -7,12 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Basic Form';
-  print:any= {}
-getData(data:any)
+  title = 'TOggle Element';
+  display= false;
+toggleElement()
 {
-  console.warn(data)
-  this.print=data
+this.display=!this.display;
 
 }
 
