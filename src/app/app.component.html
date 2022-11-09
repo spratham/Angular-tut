@@ -1,15 +1,30 @@
-<h1 class="{{ title }}">{{ title }} In Angular</h1>
-<h1 class="{{ title }}">{{ title }} In Angular</h1>
-<mat-card>Simple card</mat-card>
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
-<section>
-  <div class="example-label">Stroked</div>
-  <div class="example-button-row">
-    <button mat-stroked-button>Basic</button>
-    <button mat-stroked-button color="primary">Primary</button>
-    <button mat-stroked-button color="accent">Accent</button>
-    <button mat-stroked-button color="warn">Warn</button>
-    <button mat-stroked-button disabled>Disabled</button>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
+<div class="main">
+  <h1 class="{{ title }}">{{ title }} In Angular</h1>
+
+  <!-- input field -->
+  <input type="text" #box />
+  <br />
+
+  <!-- getting input value by click -->
+  <button mat-raised-button color="primary" (click)="getValue(box.value)">
+    Primary
+  </button>
+
+  <!-- <ul *ngFor="let item of list">
+    <li>{{item.name}}</li> <button (click)="removeId(item.id)">X</button>
+  </ul> -->
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{item.name}}</td>
+        <td><button (click)="removeId(item.id)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

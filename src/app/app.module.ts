@@ -10,10 +10,8 @@ import { SignInComponent } from './user-auth/sign-in/sign-in.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-
-
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +29,6 @@ import {MatButtonModule} from '@angular/material/button';
     MatSliderModule,
     MatCardModule,
     MatButtonModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent],
