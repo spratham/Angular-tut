@@ -1,30 +1,8 @@
 <div class="main">
   <h1 class="{{ title }}">{{ title }} In Angular</h1>
-
-  <!-- input field -->
-  <input type="text" #box />
-  <br />
-
-  <!-- getting input value by click -->
-  <button mat-raised-button color="primary" (click)="getValue(box.value)">
-    Primary
-  </button>
-
-  <!-- <ul *ngFor="let item of list">
-    <li>{{item.name}}</li> <button (click)="removeId(item.id)">X</button>
-  </ul> -->
-
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">Tasks</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of list">
-        <td>{{item.name}}</td>
-        <td><button (click)="removeId(item.id)">Remove</button></td>
-      </tr>
-    </tbody>
-  </table>
+<input type="text" #Pcomponent (keyup)="0" />
+  <app-login [item]="Pcomponent.value"></app-login>
 </div>
+
+
+
