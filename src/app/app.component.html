@@ -1,8 +1,5 @@
 <div class="main">
   <h1 class="{{ title }}">{{ title }} In Angular</h1>
-<input type="text" #Pcomponent (keyup)="0" />
-  <app-login [item]="Pcomponent.value"></app-login>
+<input type="text" [(ngModel)]="name" >
+<h2>{{name}}</h2>
 </div>
-
-
-

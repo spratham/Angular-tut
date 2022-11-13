@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'parent-child-data';
-  data=10;
-
+  title = 'Two-way binding';
+  name:any;
 }
