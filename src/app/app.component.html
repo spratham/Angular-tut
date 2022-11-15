@@ -1,4 +1,8 @@
 <div class="main">
   <h1 class="{{ title }}">{{ title }} In Angular</h1>
-<h3>{{200 | usdtInr : 2}}</h3>
+  <form #loginForm="ngForm" (ngSubmit)=userSubmit(loginForm.value)>
+    <input type="text" placeholder="Name" name="name" ngModel/>
+    <input type="text" placeholder="Password" name="pass" ngModel/>
+    <button>login</button>
+  </form>
 </div>

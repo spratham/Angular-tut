@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'pipe';
-
+  title = 'Template-driven forms';
+  userSubmit(item:any){
+    console.log(item)
+  }
 }
