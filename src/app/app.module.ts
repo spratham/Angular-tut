@@ -17,6 +17,9 @@ import { RedElDirective } from './red-el.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NoPageComponent } from './no-page/no-page.component';
+import { AboutComponent } from './about/about.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { NoPageComponent } from './no-page/no-page.component';
     RedElDirective,
     HomeComponent,
     NoPageComponent,
+    AboutComponent,
+    AboutMeComponent,
+    AboutCompanyComponent,
   ],
   imports: [
     BrowserModule,
