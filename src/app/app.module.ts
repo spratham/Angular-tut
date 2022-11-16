@@ -14,6 +14,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { UsdtInrPipe } from './pipes/usdt-inr.pipe';
 import { RedElDirective } from './red-el.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { RedElDirective } from './red-el.directive';
     SignUpComponent,
     UsdtInrPipe,
     RedElDirective,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { RedElDirective } from './red-el.directive';
     MatCardModule,
     MatButtonModule,
     ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
