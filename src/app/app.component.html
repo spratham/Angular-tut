@@ -1,29 +1,4 @@
 <div class="main">
-  <h1 class="{{ title }}">{{ title }} In Angular</h1>
-  <form [formGroup]="loginForm" (ngSubmit)="userSubmit()">
-    <input
-      type="text"
-      placeholder="Name"
-      name="name"
-      formControlName="user"
-      required
-    />
-    <span style="color: red" *ngIf="user && user.invalid && user.touched"
-      >This field is invalid</span
-    >
-    <!-- 'formControl' is used to bind the input values -->
-    <input
-      type="text"
-      placeholder="Password"
-      name="password"
-      formControlName="password"
-    />
-    <span
-      style="color: red"
-      *ngIf="password && password.invalid && password.touched"
-      >This field is invalid</span
-    >
-
-    <button [disabled]="loginForm.invalid">login</button>
-  </form>
+  <h1>{{ title }} In Angular</h1>
+  <h1 appRedEl>{{ title }} In Angular</h1>
 </div>

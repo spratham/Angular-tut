@@ -13,6 +13,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { UsdtInrPipe } from './pipes/usdt-inr.pipe';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UsdtInrPipe } from './pipes/usdt-inr.pipe';
     SignInComponent,
     SignUpComponent,
     UsdtInrPipe,
+    RedElDirective,
   ],
   imports: [
     BrowserModule,
