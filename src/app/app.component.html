@@ -1,8 +1,9 @@
 <div class="main">
   <h1 class="{{ title }}">{{ title }} In Angular</h1>
-  <form #loginForm="ngForm" (ngSubmit)=userSubmit(loginForm.value)>
-    <input type="text" placeholder="Name" name="name" ngModel/>
-    <input type="text" placeholder="Password" name="pass" ngModel/>
+  <form [formGroup]="loginForm" (ngSubmit)="userSubmit()">
+    <input type="text" placeholder="Name" name="name" formControlName="user"/>
+    <!-- 'formControl' is used to bind the input values -->
+    <input type="text" placeholder="Password" name="password" formControlName="password"/>
     <button>login</button>
   </form>
 </div>

@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { SignUpComponent } from './user-auth/sign-up/sign-up.component';
 import { SignInComponent } from './user-auth/sign-in/sign-in.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
@@ -31,6 +31,7 @@ import { UsdtInrPipe } from './pipes/usdt-inr.pipe';
     MatSliderModule,
     MatCardModule,
     MatButtonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
