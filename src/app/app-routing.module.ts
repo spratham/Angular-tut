@@ -1,3 +1,4 @@
+import { NoPageComponent } from './no-page/no-page.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -10,13 +11,18 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
+    path: '',
+    component: HomeComponent,
+  },
+  {
     path: 'register',
     component: RegisterComponent,
   },
   {
-    path: '',
-    component: HomeComponent,
+    path: '**',
+    component: NoPageComponent,
   },
+
 ];
 @NgModule({
   declarations: [],

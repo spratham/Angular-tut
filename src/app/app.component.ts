@@ -6,6 +6,6 @@ import {FormGroup, FormControl, Validators} from '@angular/forms'
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Dynamic-Routing';
+  title = 'page-not-found';
 
 }

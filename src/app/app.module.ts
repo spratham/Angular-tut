@@ -16,6 +16,7 @@ import { UsdtInrPipe } from './pipes/usdt-inr.pipe';
 import { RedElDirective } from './red-el.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { NoPageComponent } from './no-page/no-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     UsdtInrPipe,
     RedElDirective,
     HomeComponent,
+    NoPageComponent,
   ],
   imports: [
     BrowserModule,
