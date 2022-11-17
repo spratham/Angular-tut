@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { UserDataService } from '../user-service/user-data.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  userId: any;
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    console.log("user id is", this.route.snapshot.paramMap.get('id'));  //getting the id
-    this.userId = this.route.snapshot.paramMap.get('id');            //displaying
+  users:any ;
+  constructor(private userData:UserDataService) {
+    console.log('userData', userData.users());
+    this.users = userData.users();
   }
+
+  ngOnInit(): void {}
 }
