@@ -8,9 +8,6 @@ import { UserDataService } from './user-service/user-data.service';
 export class AppComponent {
   title = 'Get HTTP';
   constructor() {
-
-
-
   }
 
   ngOnInit(): void {}
