@@ -20,6 +20,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutComponent } from './about/about.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
     MatButtonModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

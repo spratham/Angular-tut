@@ -6,13 +6,14 @@ import { UserDataService } from './user-service/user-data.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'services';
-  users:any;
-  constructor(private userData:UserDataService) {
+  title = 'Get HTTP';
+  constructor() {
 
-    console.log("userData",userData.users())
-    this.users=userData.users()
+
+
   }
 
-
+  ngOnInit(): void {}
 }
+
+

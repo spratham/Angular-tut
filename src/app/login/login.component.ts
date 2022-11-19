@@ -6,11 +6,12 @@ import { UserDataService } from '../user-service/user-data.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  users:any ;
-  constructor(private userData:UserDataService) {
-    console.log('userData', userData.users());
-    this.users = userData.users();
-  }
+  users: any;
+  constructor(public userService: UserDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.userService.getUsers().subscribe((data) => {
+      this.users = data;
+    });
+  }
 }

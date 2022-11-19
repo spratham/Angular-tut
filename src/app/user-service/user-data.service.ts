@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserDataService {
 
-  constructor() { }
-  users()
-  {
-   return [
-{name:'Anil' , email:'Anila@gmail.com', age: 23},
-{name:'Surag' , email:'Surag23@gmail.com', age: 23},
-{name:'Pratham' , email:'Pratham12sda@gmail.com', age: 23}
+constructor(private httpClient:HttpClient){}
 
-    ]
+  getUsers(){
+  return  this.httpClient.get('http://localhost:3003/users');
   }
+
 }
