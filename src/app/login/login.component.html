@@ -1,4 +1,13 @@
 <h2>login works!</h2>
-<ul>
-  <li *ngFor="let user of users">{{ user.name }}</li>
-</ul>
+
+<form #userForm="ngForm" (ngSubmit)="userSubmit(userForm.value)">
+  <input type="text" placeholder="Name" name="name" ngModel />
+  <input type="number" placeholder="Age" name="age" ngModel />
+  <input type="text" placeholder="Department" name="department" ngModel />
+  <input type="text" placeholder="Blood Group" name="blood" ngModel />
+  <input type="text" placeholder="Address" name="address" ngModel />
+  <input type="tel" placeholder="phone" name="phone" ngModel />
+<br>
+
+  <button class="btn btn-primary">Add new user</button>
+</form>
